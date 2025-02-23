@@ -5,7 +5,6 @@ export const AddCategories = ({ onNewCategory }) => {
 
   const onInputChange = ({ target }) => {
     setinputValue(target.value)
-    console.log(inputValue)
   }
 
   const onSubmit = (event) => {
@@ -14,7 +13,6 @@ export const AddCategories = ({ onNewCategory }) => {
     if (newValue.length <= 2) return
     onNewCategory(newValue)
     setinputValue('')
-    console.log(inputValue)
   }
 
   return (
